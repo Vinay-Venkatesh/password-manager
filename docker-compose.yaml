@@ -1,0 +1,15 @@
+# Use root/example as user/password credentials
+version: '3.1'
+
+services:
+    db:
+        image: mysql
+        volumes:
+            - "./.data/db:/var/lib/mysql"
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: password_keeper
+            MYSQL_USER: pass_manager
+            MYSQL_PASSWORD: keeper
+        ports:
+            - '3306:3306'
