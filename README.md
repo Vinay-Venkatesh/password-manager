@@ -1,2 +1,3 @@
 # password-manager
-Repository contains flask code for password manager.
+
+A Flask based personal passowrd manager.
