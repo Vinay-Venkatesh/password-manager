@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Welcome to Password Manager{% endblock %}
+{% block content %}
+
+<div class="text-center">
+  <h2 class="mb-4">Welcome to the Password Manager</h2>
+  <p class="lead mb-4">Please choose one of the following options to continue:</p>
+
+  <!-- Buttons for Register and Login -->
+  <div class="d-flex justify-content-center">
+    <a href="{{ url_for('register') }}" class="btn btn-primary btn-lg mx-2">Register</a>
+    <a href="{{ url_for('login') }}" class="btn btn-success btn-lg mx-2">Login</a>
+  </div>
+
+  <p class="mt-4">Already have an account? <a href="{{ url_for('login') }}">Login here</a>.</p>
+  <p>Don't have an account? <a href="{{ url_for('register') }}">Register here</a>.</p>
+</div>
+
+{% endblock %}
