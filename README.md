@@ -1,2 +1,2 @@
 # password-manager
-Repository contains backend code for password manager.
+Repository contains flask code for password manager.
